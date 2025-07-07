@@ -119,6 +119,7 @@ body {
 }
 
 .profile-page h1 {
+  text-align: center;
   font-size: 2.7rem;
   line-height: 1;
   margin-bottom: 1.2rem;
