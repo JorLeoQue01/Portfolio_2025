@@ -43,10 +43,13 @@ body {
 }
 
 @keyframes show-animate {
-  0%,30% {
+
+  0%,
+  30% {
     opacity: 0;
-    transform:  rotate(-20deg);
+    transform: rotate(-20deg);
   }
+
   100% {
     opacity: 1;
     transform: rotate(0deg);
@@ -70,7 +73,7 @@ body {
   z-index: -1;
 }
 
-.cover.cover-right{
+.cover.cover-right {
   z-index: 100;
   transition: transform 1s cubic-bezier(0.645, 0.45, 0.355, 1);
 }
@@ -108,7 +111,7 @@ body {
   align-items: center;
 }
 
-.profile-page img {
+.profile-page .profile-pic {
   max-width: 50%;
   border-radius: 50%;
   border: 0.25rem solid var(--main-color);
@@ -140,12 +143,25 @@ body {
   border: var(--border);
   border-radius: 50%;
   color: var(--main-color);
-  transition: 0.5s;
+  transition: 0.5s ease;
+}
+
+.profile-page .social-media a img {
+  width: 1rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: .15s ease;
 }
 
 .profile-page .social-media a:hover {
   background: var(--main-color);
   color: var(--white-color);
+}
+
+.profile-page .social-media a:hover img {
+    filter:brightness(100);
 }
 
 .profile-page p {
@@ -420,7 +436,7 @@ body {
   font-weight: 600;
 }
 
-.portfolio-box .btn-box{
+.portfolio-box .btn-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,7 +507,7 @@ body {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
-  
+
 }
 
 .back-profile:hover {
