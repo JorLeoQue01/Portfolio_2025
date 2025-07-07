@@ -91,15 +91,15 @@ setTimeout(() => {
 
 // opening animation (all page right animation)
 
- pages.forEach((_, index) => {
+pages.forEach((_, index) => {
+    setTimeout(() => {
+        reverseIndex();
+        pages[pageNumber].classList.remove('turn');
+
         setTimeout(() => {
             reverseIndex();
-            pages[pageNumber].classList.remove('turn');
+            pages[pageNumber].style.zIndex = 20 + index
+        }, 500)
 
-            setTimeout(() => {
-                reverseIndex();
-                pages[pageNumber].style.zIndex = 20 + index
-            }, 500)
-
-        }, (index + 1) * 200 + 2100)
-    })
+    }, (index + 1) * 200 + 2100)
+})
