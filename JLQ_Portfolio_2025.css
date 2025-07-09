@@ -39,7 +39,7 @@ body {
   height: 50rem;
   padding: 2rem;
   perspective: 200rem;
-  animation: show-animate 2s forwards;
+  animation: show-animate 3s forwards;
 }
 
 @keyframes show-animate {
@@ -162,7 +162,7 @@ body {
 }
 
 .profile-page .social-media a:hover img {
-    filter:brightness(100);
+  filter: grayscale(100%) brightness(500%);
 }
 
 .profile-page p {
@@ -353,7 +353,8 @@ body {
 }
 
 .skills-content .content {
-  display: flex;
+  display: inline-flex;
+  margin-right: .5rem;
   flex-wrap: wrap;
   gap: .8rem;
 }
@@ -364,8 +365,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 6rem;
+  width: auto;
   height: 5rem;
+  padding: 1rem;
   border: var(--border);
   border-radius: .3rem;
   font-weight: 600;
@@ -380,8 +382,19 @@ body {
 }
 
 .skills-content i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--main-color);
+  transition: .3s ease;
+}
+
+.skills-content img {
+  height: 2rem;
+  width: 2rem;
+  margin-top: .5rem;
+}
+
+.skills-content .content span:hover img {
+  filter: grayscale(100%) brightness(500%);
   transition: .3s ease;
 }
 
