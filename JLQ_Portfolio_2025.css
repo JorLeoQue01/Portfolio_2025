@@ -248,7 +248,8 @@ body {
 .workeduc-box .workeduc-content {
   position: relative;
   padding-left: 1.6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
 }
 
 .workeduc-box .workeduc-content::before {
