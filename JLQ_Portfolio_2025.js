@@ -1,186 +1,180 @@
 // ==========================================
-// 1. SISTEMA DE TRADUCCIÓN (DICCIONARIO)
+// 1. DICCIONARIO DE TRADUCCIONES
 // ==========================================
 const translations = {
     es: {
-        profession: "Artista 3D Generalista",
-        about: "Hola. soy Jorge, un artista generalista 3D y programador Front-End. Tengo experiencia en modelado 3D y texturizado de objetos y personajes, así como en la creación de interfaces interactivas para aplicaciones móviles.",
-        btnCv: "Descargar CV",
-        btnContact: "Contacto",
-        titleExp: "Experiencia Laboral",
-        titleEdu: "Educación",
+        profileRole: "Artista 3D Generalista",
+        profileDesc: "Hola. soy Jorge, un artista generalista 3D y programador Front-End Junior. Tengo experiencia en modelado 3D y texturizado de objetos y personajes, así como en la creación de interfaces interactivas para aplicaciones móviles.",
+        downloadCv: "Descargar CV",
+        contactMeBtn: "Contacto",
+        titleExperience: "Experiencia Laboral",
+        dateIlmex: "Marzo 2021 - Junio 2021",
+        roleIlmex: "Creador de recursos digitales - Ílmex",
+        descIlmex: "Prácticas <b>FCT</b> pertenecientes al CFGS de <b>A2D3DVEI</b>. Realización de montajes audiovisuales y modelado de elementos 3D para RRSS.",
+        datePromvi: "Marzo 2023 - Febrero 2024",
+        rolePromvi: "Artista 3D - PROMVI Games",
+        descPromvi: "Modelado 3D y texturizado de vehículos, armas y otros props para el videojuego <b> World Titan War </b>.",
+        dateAyto: "Junio 2024 - Junio 2025",
+        roleAyto: "Programador Informático - Ayto. Cañada Rosal",
+        descAyto: "Desarrollo y diseño de interfaz en Figma y Android Studio para la app <b>\"Colonos Felinos\"</b>.",
+        titleEducation: "Educación",
+        dateEdu1: "Septiembre 2019 - Junio 2021",
+        descEdu1: "Ciclo Formativo de Grado Superior en Animación 2D, 3D, Videojuegos y Entornos Interactivos.",
+        dateEdu2: "Octubre 2021 - Diciembre 2022",
+        dateEdu3: "Junio 2024 - Junio 2025",
+        titleEdu2: "Máster Modelado 3D - EVAD",
+        descEdu2: "Master en animación y modelado 3D. <br>Profundización de conceptos a nivel técnico orientados al trabajo en la industria del videojuego.",
+        descEdu3: "Programación en lenguajes estructurados de aplicaciones de gestión. Nivel 3",
+        descEdu4: "Programación con lenguajes orientados a objetos y bases de datos relacionales. Nivel 3",
+        dateEdu5: "Octubre 2025 - Enero 2027",
+        titleEdu5: "Diploma en Creación de Videojuegos - Universidad de Málaga",
+        descEdu5: "Especialidad en Arte y Programación. Desarrollo de habilidades de carácter generalista para el trabajo en videojuegos.",
         titleServices: "Mis Servicios",
+        service1Title: "Modelado 3D - Low / High poly",
+        service1Desc: "Elaboración de modelos 3D para videojuegos o animación a medida, tanto de objetos como de personajes.",
+        service2Title: "Texturizado",
+        service2Desc: "Realización de texturas para modelos 3D, desde cartoon hasta semi-realistas, adaptadas a las necesidades del proyecto.",
+        service3Title: "Diseño de interfaces",
+        service3Desc: "Diseño de interfaces para aplicaciones móviles y web, con un enfoque en la usabilidad y la estética.",
+        service4Title: "Edición de vídeo",
+        service4Desc: "Edición de vídeos y creación de montajes audiovisuales para YouTube o RRSS.",
         titleSkills: "Mis Habilidades",
+        skills3D: "Modelado 3D",
+        skillsText: "Texturizado",
+        skillsEngines: "Motores de juego",
+        skillsOthers: "Otros conocimientos",
         titleProjects: "Mis proyectos",
+        projectTitle: "Render Habitación",
+        sketchfabGal: "Galería de Sketchfab",
+        aboutProject: "Sobre el proyecto:",
+        projectDesc: "Render de una composición en una habitación donde se muestran algunos elementos de otros proyectos.",
+        detailsBtn: "Detalles",
+        moreProjectsBtn: "Más proyectos",
         titleContact: "Contacto",
-        // Contenidos específicos de Experiencia (en orden de aparición)
-        exp: [
-            { role: "Creador de recursos digitales - Ílmex", desc: "Prácticas <b>FCT</b> pertenecientes al CFGS de <b>A2D3DVEI</b>. Realización de montajes audiovisuales y modelado de elementos 3D para RRSS." },
-            { role: "Artista 3D - PROMVI Games", desc: "Modelado 3D y texturizado de vehículos, armas y otros props para el videojuego <b> World Titan War </b>." },
-            { role: "Programador Informático - Ayto. Cañada Rosal", desc: "Desarrollo y diseño de interfaz en Figma y Android Studio para la app <b>\"Colonos Felinos\"</b>." }
-        ],
-        // Contenidos de Educación (en orden de aparición)
-        edu: [
-            { title: "CFGS A2D3DVEI - I.E.S. Ángel de Saavedra", desc: "Ciclo Formativo de Grado Superior en Animación 2D, 3D, Videojuegos y Entornos Interactivos." },
-            { title: "Máster Modelado 3D - EVAD", desc: "Master en animación y modelado 3D. <br>Profundización de conceptos a nivel técnico orientados al trabajo en la industria del videojuego." },
-            { title: "IFCD 0111 - Ayto. Cañada Rosal", desc: "Programación en lenguajes estructurados de aplicaciones de gestión. Nivel 3" },
-            { title: "IFCD 0112 - Ayto. Cañada Rosal", desc: "Programación con lenguajes orientados a objetos y bases de datos relacionales. Nivel 3" },
-            { title: "Diploma en Creación de Videojuegos - Universidad de Málaga", desc: "Especialidad en Arte y Programación. Desarrollo de habilidades de carácter generalista para el trabajo en videojuegos." }
-        ],
-        // Contenidos de Servicios
-        services: [
-            { title: "Modelado 3D - Low / High poly", desc: "Elaboración de modelos 3D para videojuegos o animación a medida, tanto de objetos como de personajes." },
-            { title: "Texturizado", desc: "Realización de texturas para modelos 3D, desde cartoon hasta semi-realistas, adaptadas a las necesidades del proyecto." },
-            { title: "Diseño de interfaces", desc: "Diseño de interfaces para aplicaciones móviles y web, con un enfoque en la usabilidad y la estética." },
-            { title: "Edición de vídeo", desc: "Edición de vídeos y creación de montajes audiovisuales para YouTube o RRSS." }
-        ],
-        // Proyecto
-        projectTitle: "Flechas elementales",
-        projectLink: "Ver modelo en 3D",
-        projectAbout: "Sobre el proyecto:",
-        projectDesc: "Pequeño estudio personal sobre toon shading y efectos de partículas. El objetivo era crear un conjunto de flechas elementales con efectos de fuego, hielo, electricidad y veneno.",
-        projectBtnDetails: "Detalles del modelo",
-        projectBtnMore: "Más proyectos",
-        // Contacto
-        formName: "Nombre Completo",
-        formMessage: "Escriba aquí su mensaje",
-        formSubmit: "Enviar",
-        profileLink: "Perfil"
+        profileBack: "Perfil",
+        // Placeholders e Inputs
+        placeholders: {
+            "form-name": "Nombre Completo",
+            "form-email": "Email",
+            "form-msg": "Escriba aquí su mensaje"
+        },
+        submitValue: "Enviar"
     },
     en: {
-        profession: "Generalist 3D Artist",
-        about: "Hi, I'm Jorge, a generalist 3D artist and Front-End programmer. I have experience in 3D modeling and texturing of objects and characters, as well as creating interactive interfaces for mobile applications.",
-        btnCv: "Download CV",
-        btnContact: "Contact",
-        titleExp: "Work Experience",
-        titleEdu: "Education",
+        profileRole: "3D Generalist Artist",
+        profileDesc: "Hi, I'm Jorge, a Junior 3D generalist artist and Front-End programmer. I have experience in 3D modeling and texturing objects and characters, as well as creating interactive interfaces for mobile applications.",
+        downloadCv: "Download CV",
+        contactMeBtn: "Contact Me",
+        titleExperience: "Work Experience",
+        dateIlmex: "March 2021 - June 2021",
+        roleIlmex: "Digital Resource Creator - Ílmex",
+        descIlmex: "<b>FCT</b> Internship belonging to the Higher Degree in <b>A2D3DVEI</b>. Production of audiovisual materials and 3D modeling for social media.",
+        datePromvi: "March 2023 - February 2024",
+        rolePromvi: "3D Artist - PROMVI Games",
+        descPromvi: "3D modeling and texturing of vehicles, weapons, and other props for the video game <b>World Titan War</b>.",
+        dateAyto: "June 2024 - June 2025",
+        roleAyto: "Computer Programmer - Cañada Rosal Town Hall",
+        descAyto: "Interface design and development in Figma and Android Studio for the app <b>\"Colonos Felinos\"</b>.",
+        titleEducation: "Education",
+        dateEdu1: "September 2019 - June 2021",
+        descEdu1: "Higher Degree in 2D, 3D Animation, Video Games, and Interactive Environments.",
+        dateEdu2: "October 2021 - December 2022",
+        dateEdu3: "June 2024 - June 2025",
+        titleEdu2: "Master's Degree in 3D Modeling - EVAD",
+        descEdu2: "Master's in animation and 3D modeling. <br>In-depth technical concepts tailored for the gaming industry.",
+        descEdu3: "Structured programming languages for management applications. Level 3",
+        descEdu4: "Object-oriented programming languages and relational databases. Level 3",
+        dateEdu5: "October 2025 - January 2027",
+        titleEdu5: "Diploma in Video Game Creation - University of Málaga",
+        descEdu5: "Specialization in Art and Programming. Development of generalist skills for game development.",
         titleServices: "My Services",
+        service1Title: "3D Modeling - Low / High poly",
+        service1Desc: "Custom 3D model crafting for video games or animation, both for props and characters.",
+        service2Title: "Texturing",
+        service2Desc: "Creation of textures for 3D models, ranging from stylized cartoon to semi-realistic, tailored to project needs.",
+        service3Title: "Interface Design",
+        service3Desc: "UI/UX design for web and mobile applications, focusing on usability and aesthetics.",
+        service4Title: "Video Editing",
+        service4Desc: "Video editing and audio-visual post-production for YouTube or social media platforms.",
         titleSkills: "My Skills",
+        skills3D: "3D Modeling",
+        skillsText: "Texturing",
+        skillsEngines: "Game Engines",
+        skillsOthers: "Other Knowledge",
         titleProjects: "My Projects",
+        projectTitle: "Room Render",
+        sketchfabGal: "Sketchfab Gallery",
+        aboutProject: "About the project:",
+        projectDesc: "Room composition render showcases assets from other various individual projects.",
+        detailsBtn: "Details",
+        moreProjectsBtn: "More Projects",
         titleContact: "Contact",
-        exp: [
-            { role: "Digital Resource Creator - Ílmex", desc: "<b>FCT</b> internship belonging to the Higher Degree in <b>A2D3DVEI</b>. Production of audiovisual montages and 3D modeling for social media." },
-            { role: "3D Artist - PROMVI Games", desc: "3D modeling and texturing of vehicles, weapons, and other props for the video game <b>World Titan War</b>." },
-            { role: "Computer Programmer - Cañada Rosal Town Hall", desc: "Interface design and development in Figma and Android Studio for the <b>\"Colonos Felinos\"</b> app." }
-        ],
-        edu: [
-            { title: "Higher Degree A2D3DVEI - I.E.S. Ángel de Saavedra", desc: "Higher Vocational Training in 2D, 3D Animation, Video Games, and Interactive Environments." },
-            { title: "3D Modeling Master - EVAD", desc: "Master's in 3D animation and modeling. Advanced technical concepts oriented towards the video game industry." },
-            { title: "IFCD 0111 - Cañada Rosal Town Hall", desc: "Programming in structured languages for management applications. Level 3." },
-            { title: "IFCD 0112 - Cañada Rosal Town Hall", desc: "Programming with object-oriented languages and relational databases. Level 3." },
-            { title: "Diploma in Video Game Creation - University of Málaga", desc: "Specialization in Art and Programming. Development of generalist skills for game development." }
-        ],
-        services: [
-            { title: "3D Modeling - Low / High poly", desc: "Custom 3D model creation for video games or animation, including both assets and characters." },
-            { title: "Texturing", desc: "Texturing for 3D models, from cartoon to semi-realistic styles, tailored to project requirements." },
-            { title: "UI/UX Design", desc: "Interface design for mobile and web applications, focusing on usability and aesthetics." },
-            { title: "Video Editing", desc: "Video editing and audiovisual montage production for YouTube or social media." }
-        ],
-        projectTitle: "Elemental Arrows",
-        projectLink: "View 3D Model",
-        projectAbout: "About the project:",
-        projectDesc: "Small personal study on toon shading and particle effects. The goal was to create a set of elemental arrows with fire, ice, electricity, and poison effects.",
-        projectBtnDetails: "Model details",
-        projectBtnMore: "More projects",
-        formName: "Full Name",
-        formMessage: "Write your message here",
-        formSubmit: "Send",
-        profileLink: "Profile"
+        profileBack: "Profile",
+        // Placeholders e Inputs
+        placeholders: {
+            "form-name": "Full Name",
+            "form-email": "Email Address",
+            "form-msg": "Write your message here"
+        },
+        submitValue: "Send"
     }
 };
 
+// Cambiar el idioma en el DOM
 function changeLanguage(lang) {
-    const data = translations[lang];
-
-    // Perfil Izquierdo
-    document.querySelector('.profile-page h3').innerText = data.profession;
-    document.querySelector('.profile-page p').innerText = data.about;
-    document.querySelector('.profile-page .btn-box .btn:not(.contact-me)').innerText = data.btnCv;
-    document.querySelector('.profile-page .btn-box .btn.contact-me').innerText = data.btnContact;
-
-    // Títulos de Páginas
-    document.querySelector('#turn-1 .page-front .title').innerText = data.titleExp;
-    document.querySelector('#turn-1 .page-back .title').innerText = data.titleEdu;
-    document.querySelector('#turn-2 .page-front .title').innerText = data.titleServices;
-    document.querySelector('#turn-2 .page-back .title').innerText = data.titleSkills;
-    document.querySelector('#turn-3 .page-front .title').innerText = data.titleProjects;
-    document.querySelector('#turn-3 .page-back .title').innerText = data.titleContact;
-
-    // Experiencia Laboral (Modificando solo h3 y p individuales para mantener los eventos intactos)
-    const expBlocks = document.querySelectorAll('#turn-1 .page-front .workeduc-content');
-    expBlocks.forEach((block, index) => {
-        if (data.exp[index]) {
-            block.querySelector('h3').innerText = data.exp[index].role;
-            block.querySelector('p').innerHTML = data.exp[index].desc;
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
         }
     });
 
-    // Educación
-    const eduBlocks = document.querySelectorAll('#turn-1 .page-back .workeduc-content');
-    eduBlocks.forEach((block, index) => {
-        if (data.edu[index]) {
-            block.querySelector('h3').innerText = data.edu[index].title;
-            block.querySelector('p').innerHTML = data.edu[index].desc;
+    // Cambiar placeholders del formulario
+    for (const id in translations[lang].placeholders) {
+        const inputElement = document.getElementById(id);
+        if (inputElement) {
+            inputElement.placeholder = translations[lang].placeholders[id];
         }
-    });
-
-    // Servicios
-    const serviceBlocks = document.querySelectorAll('.services-content');
-    serviceBlocks.forEach((block, index) => {
-        if (data.services[index]) {
-            block.querySelector('h3').innerText = data.services[index].title;
-            block.querySelector('p').innerText = data.services[index].desc;
-        }
-    });
-
-    // Proyectos
-    document.querySelector('.info-title h3').innerText = data.projectTitle;
-    const projectLink = document.querySelector('.info-title a');
-    projectLink.innerHTML = `${data.projectLink} <i class='bx bx-link'></i>`;
-    
-    const projectParagraphs = document.querySelectorAll('.info-box p');
-    if (projectParagraphs.length >= 2) {
-        projectParagraphs[0].innerText = data.projectAbout;
-        projectParagraphs[1].innerText = data.projectDesc;
     }
-    document.querySelector('.portfolio-box .btn-box .btn:nth-child(1)').innerText = data.projectBtnDetails;
-    document.querySelector('.portfolio-box .btn-box .btn:nth-child(2)').innerText = data.projectBtnMore;
 
-    // Contacto
-    document.querySelector('form[name="contact"] input[name="name"]').placeholder = data.formName;
-    document.querySelector('form[name="contact"] textarea[name="message"]').placeholder = data.formMessage;
-    document.querySelector('form[name="contact"] input[type="submit"]').value = data.formSubmit;
-    document.querySelector('.back-profile p').innerText = data.profileLink;
+    // Cambiar el botón de submit
+    const submitBtn = document.getElementById('form-submit');
+    if (submitBtn) submitBtn.value = translations[lang].submitValue;
 }
 
-// Inicializar listeners de los botones de idioma
-document.addEventListener("DOMContentLoaded", () => {
-    const btnEs = document.getElementById('btn-es');
-    const btnEn = document.getElementById('btn-en');
+// Configuración de botones selectores de idioma
+const btnEs = document.getElementById('btn-es');
+const btnEn = document.getElementById('btn-en');
 
-    if (btnEs && btnEn) {
-        btnEs.onclick = (e) => {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            changeLanguage('es');
-        };
-
-        btnEn.onclick = (e) => {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            changeLanguage('en');
-        };
+btnEs.onclick = () => {
+    if (!btnEs.classList.contains('active')) {
+        btnEs.classList.add('active');
+        btnEn.classList.remove('active');
+        changeLanguage('es');
     }
-});
+};
+
+btnEn.onclick = () => {
+    if (!btnEn.classList.contains('active')) {
+        btnEn.classList.add('active');
+        btnEs.classList.remove('active');
+        changeLanguage('en');
+    }
+};
 
 
 // ==========================================
-// 2. LÓGICA DE ANIMACIONES (TU CÓDIGO ORIGINAL)
+// 2. LÓGICA DE ANIMACIONES DEL PORTFOLIO
 // ==========================================
 
-// turn pages when click next or prev button
 const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
+const pages = document.querySelectorAll('.book-page.page-right');
+const contactMeBtn = document.querySelector('.btn.contact-me');
+const backProfileBtn = document.querySelector('.back-profile');
+const coverRight = document.querySelector('.cover.cover-right');
+const pageLeft = document.querySelector('.book-page.page-left');
 
+// Pasar páginas al hacer clic en botones de siguiente/anterior
 pageTurnBtn.forEach((el, index) => {
     el.onclick = () => {
         const pageTurnId = el.getAttribute('data-page');
@@ -188,91 +182,49 @@ pageTurnBtn.forEach((el, index) => {
 
         if (pageTurn.classList.contains('turn')) {
             pageTurn.classList.remove('turn');
-            setTimeout(() => {
-                pageTurn.style.zIndex = 20 - index;
-            }, 500)
-        }
-        else {
+            setTimeout(() => { pageTurn.style.zIndex = 20 - index; }, 500);
+        } else {
             pageTurn.classList.add('turn');
-            setTimeout(() => {
-                pageTurn.style.zIndex = 20 + index;
-            }, 500)
+            setTimeout(() => { pageTurn.style.zIndex = 20 + index; }, 500);
         }
-    }
-})
+    };
+});
 
-// contact me button when click
-const pages = document.querySelectorAll('.book-page.page-right');
-const contactMeBtn = document.querySelector('.btn.contact-me');
-
-contactMeBtn.onclick = () => {
+// Botón Contacto (Pasa todas las páginas hacia adelante)
+contactMeBtn.onclick = (e) => {
+    e.preventDefault();
     pages.forEach((page, index) => {
         setTimeout(() => {
-            setTimeout(() => {
-                page.style.zIndex = 20 + index;
-            }, 500)
             page.classList.add('turn');
-        }, (index + 1) * 200 + 100)
-    })
-}
+            setTimeout(() => { page.style.zIndex = 20 + index; }, 500);
+        }, (index + 1) * 200);
+    });
+};
 
-// create reverse index function
-let totalPages = pages.length;
-let pageNumber = 0;
-
-function reverseIndex() {
-    pageNumber--;
-    if (pageNumber < 0) {
-        pageNumber = totalPages - 1;
-    }
-}
-
-// back profile button when click
-const backProfileBtn = document.querySelector('.back-profile');
-
-backProfileBtn.onclick = () => {
-    pages.forEach((_, index) => {
+// Botón regresar al perfil (Cierra todas las páginas de atrás hacia adelante)
+backProfileBtn.onclick = (e) => {
+    e.preventDefault();
+    const totalPages = pages.length;
+    pages.forEach((page, index) => {
         setTimeout(() => {
-            reverseIndex();
-            pages[pageNumber].classList.remove('turn');
-
+            const targetPage = pages[totalPages - 1 - index];
+            targetPage.classList.remove('turn');
             setTimeout(() => {
-                reverseIndex();
-                pages[pageNumber].style.zIndex = 10 + index
-            }, 500)
+                targetPage.style.zIndex = 10 + index;
+            }, 500);
+        }, (index + 1) * 200);
+    });
+};
 
-        }, (index + 1) * 200 + 100)
-    })
-}
+// Animación de apertura inicial controlada
+setTimeout(() => { coverRight.classList.add('turn'); }, 2000);
+setTimeout(() => { coverRight.style.zIndex = -1; }, 2500);
+setTimeout(() => { pageLeft.style.zIndex = 20; }, 3000);
 
-// opening animation
-const coverRight = document.querySelector('.cover.cover-right');
-const pageLeft = document.querySelector('.book-page.page-left');
-
-// opening animation (cover right animation)
-setTimeout(() => {
-    coverRight.classList.add('turn');
-}, 2000)
-
-setTimeout(() => {
-    coverRight.style.zIndex = -1;
-}, 2500)
-
-// opening animation (page left or profile page animation)
-setTimeout(() => {
-    pageLeft.style.zIndex = 20;
-}, 3300)
-
-// opening animation (all page right animation)
-pages.forEach((_, index) => {
+// Restablecer el zIndex inicial de las páginas derechas de forma ordenada
+pages.forEach((page, index) => {
     setTimeout(() => {
-        reverseIndex();
-        pages[pageNumber].classList.remove('turn');
-
-        setTimeout(() => {
-            reverseIndex();
-            pages[pageNumber].style.zIndex = 20 + index
-        }, 500)
-
-    }, (index + 1) * 200 + 2100)
-})
+        page.classList.remove('turn');
+        page.style.zIndex = 10 + (pages.length - index);
+    }, 2100 + (index * 200));
+});
