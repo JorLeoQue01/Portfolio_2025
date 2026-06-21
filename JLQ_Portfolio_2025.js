@@ -3,8 +3,9 @@
 // ==========================================
 const translations = {
     es: {
+        TitleA2D3D: "CFGS - A2D3DVEI - I.E.S. Ángel de Saavedra",
         profileRole: "Artista 3D Generalista",
-        profileDesc: "Hola. soy Jorge, un artista generalista 3D y programador Front-End Junior. Tengo experiencia en modelado 3D y texturizado de objetos y personajes, así como en la creación de interfaces interactivas para aplicaciones móviles.",
+        profileDesc: "Artista generalista 3D y programador Front-End Junior. Tengo experiencia en modelado 3D y elaboración de texturas, renders y animaciones, así como en la creación y edición de contenido audiovisual y motion graphics, además del diseño y confección de interfaces interactivas para aplicaciones móviles.",
         downloadCv: "Descargar CV",
         contactMeBtn: "Contacto",
         titleExperience: "Experiencia Laboral",
@@ -28,7 +29,7 @@ const translations = {
         descEdu4: "Programación con lenguajes orientados a objetos y bases de datos relacionales. Nivel 3",
         dateEdu5: "Octubre 2025 - Enero 2027",
         titleEdu5: "Diploma en Creación de Videojuegos - Universidad de Málaga",
-        descEdu5: "Especialidad en Arte y Programación. Desarrollo de habilidades de carácter generalista para el trabajo en videojuegos.",
+        descEdu5: "<b>(90 Créditos ECTS)</b> Especialidad en Arte y Programación. Desarrollo de habilidades de carácter generalista para el trabajo en videojuegos.",
         titleServices: "Mis Servicios",
         service1Title: "Modelado 3D - Low / High poly",
         service1Desc: "Elaboración de modelos 3D para videojuegos o animación a medida, tanto de objetos como de personajes.",
@@ -61,14 +62,15 @@ const translations = {
         submitValue: "Enviar"
     },
     en: {
+        TitleA2D3D: "CFGS - 2DA3DVIE - I.E.S. Ángel de Saavedra",
         profileRole: "3D Generalist Artist",
-        profileDesc: "Hi, I'm Jorge, a Junior 3D generalist artist and Front-End programmer. I have experience in 3D modeling and texturing objects and characters, as well as creating interactive interfaces for mobile applications.",
+        profileDesc: "Junior generalist 3D artist and front-end developer. I have experience in 3D modeling, texturing, rendering, and animation, as well as in creating and editing audiovisual content and motion graphics, and in designing and developing interactive interfaces for mobile applications.",
         downloadCv: "Download CV",
         contactMeBtn: "Contact Me",
         titleExperience: "Work Experience",
         dateIlmex: "March 2021 - June 2021",
         roleIlmex: "Digital Resource Creator - Ílmex",
-        descIlmex: "<b>FCT</b> Internship belonging to the Higher Degree in <b>A2D3DVEI</b>. Production of audiovisual materials and 3D modeling for social media.",
+        descIlmex: "<b>FCT</b> Internship belonging to the Higher Degree in <b>2DA3DVIE</b>. Production of audiovisual materials and 3D modeling for social media.",
         datePromvi: "March 2023 - February 2024",
         rolePromvi: "3D Artist - PROMVI Games",
         descPromvi: "3D modeling and texturing of vehicles, weapons, and other props for the video game <b>World Titan War</b>.",
@@ -86,7 +88,7 @@ const translations = {
         descEdu4: "Object-oriented programming languages and relational databases. Level 3",
         dateEdu5: "October 2025 - January 2027",
         titleEdu5: "Diploma in Video Game Creation - University of Málaga",
-        descEdu5: "Specialization in Art and Programming. Development of generalist skills for game development.",
+        descEdu5: "<b>(90 ECTS credits)</b>Specialization in Art and Programming. Development of generalist skills for game development.",
         titleServices: "My Services",
         service1Title: "3D Modeling - Low / High poly",
         service1Desc: "Custom 3D model crafting for video games or animation, both for props and characters.",
